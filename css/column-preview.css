@@ -76,7 +76,7 @@ h1 {
   font-size: 2.4rem;
   color: hsl(0, 0%, 95%);
 }
-a {
+.container a {
   display: block;
   text-decoration: none;
   padding: 15px 20px;
@@ -96,11 +96,28 @@ a {
 .card3 a {
   color: hsl(179, 100%, 13%);
 }
+a:hover {
+  color: hsl(0, 0%, 95%);
+  background: transparent;
+  border: 1px solid hsl(0, 0%, 95%);
+}
+.challenge {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  /* color: #e1e8ee; */
+  text-transform: capitalize;
+}
+.challenge a {
+  text-decoration: none;
+}
 
 @media (max-width: 375px) {
   .container {
     width: 330px;
-    height: fit-content;
+    height: auto;
     margin: 20px auto;
   }
   .card1 {
@@ -111,9 +128,9 @@ a {
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
   }
-}
-a:hover {
-  color: hsl(0, 0%, 95%);
-  background: transparent;
-  border: 1px solid hsl(0, 0%, 95%);
+  .challenge {
+    top: 195%;
+    font-size: 12px;
+    width: 330px;
+  }
 }
